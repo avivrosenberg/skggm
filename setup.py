@@ -2,7 +2,6 @@ from __future__ import print_function
 import sys
 from setuptools import setup
 from distutils.extension import Extension
-from Cython.Build import cythonize
 import platform
 
 
@@ -20,6 +19,7 @@ except ImportError:
 
 try:
     import Cython  # NOQA
+    from Cython.Build import cythonize
 except ImportError:
     print('Cython is required during installation')
     sys.exit(1)
