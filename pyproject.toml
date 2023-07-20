@@ -1,0 +1,4 @@
+# Configure dependencies that need to be installed during setup
+# Note that these are not runtime dependencies, which are specified in setup.py.
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "numpy", "scipy"]
